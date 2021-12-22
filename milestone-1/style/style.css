@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Header*/
+header{
+  height: 100px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.header-left{
+
+}
+
+.header-left img{
+  width: 70px;
+}
+
+/*Main*/
+main{
+  height: calc(100vh - 100px);
+  background-color: rgb(26, 25, 25);
+  display: flex;
+  align-items: center;
+}
+
+.container-album{
+  width: 1200px;
+  min-height: 500px;
+  background-color: blue;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box-album{
+  flex-basis: 200px;
+  margin: 20px;
+  height: 200px;
+  background-color: chartreuse;
+}
