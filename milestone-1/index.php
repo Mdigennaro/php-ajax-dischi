@@ -32,8 +32,6 @@ include_once __DIR__ . './components/database.php';
   <img src="img/spotify-logo.png" alt="logo">
 </div>
 
-<div class="header-right"></div>
-  
 </header>
 
 <main>
