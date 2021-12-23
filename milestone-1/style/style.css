@@ -13,9 +13,6 @@ header{
   padding: 0 20px;
 }
 
-.header-left{
-
-}
 
 .header-left img{
   width: 70px;
@@ -23,16 +20,13 @@ header{
 
 /*Main*/
 main{
-  height: calc(100vh - 100px);
   background-color: rgb(26, 25, 25);
   display: flex;
-  align-items: center;
+  padding-top: 5px;
 }
 
 .container-album{
   width: 1200px;
-  min-height: 500px;
-  background-color: blue;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -40,7 +34,40 @@ main{
 
 .box-album{
   flex-basis: 200px;
-  margin: 20px;
-  height: 200px;
-  background-color: chartreuse;
+  margin: 15px;
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
 }
+
+.box-album img{
+  width:100% ;
+  height: 170px;
+  display: flex;
+  text-align: center;
+}
+
+.box-album a{
+  text-decoration: none;
+}
+
+.box-album h2{
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  padding-top: 5px;
+}
+
+.box-album h3{
+  font-size: 14px;
+  color: #a9a9a9;
+}
+
+.box-album h5{
+  font-size: 10px;
+  color: #474747;
+}
+
