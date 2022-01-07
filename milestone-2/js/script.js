@@ -1,8 +1,11 @@
-const app = new Vue({
 
+const app = new Vue({
+  
   el: '#app',
 
-  data:{
+  data: {
+
+    albums : [],
 
   },
 
@@ -11,14 +14,15 @@ const app = new Vue({
   },
 
   mounted(){
-    axios.get("php/database.php")
-    .then(r=>{
-      console.log('ok',r);
+
+    axios.get('http://localhost/php/php-ajax-dischi/milestone-2/php/server.php')
+    .then((response) =>{
+      this.albums = response.data;
+      console.log(this.albums);
     })
-    .catch((e)=>{
-      console.log('ko',e);
-    })
+    .catch((error) =>{
+      console.log('ko',error);
+    });
+
   }
-
-
 })
